@@ -1,0 +1,260 @@
+ using System;
+
+namespace Kriptografi
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string plaintxt, chipertxt;
+            
+                Console.WriteLine();
+                Console.Write("Masukan Teks : ");
+                plaintxt = Console.ReadLine();
+                chipertxt = Enkripsi(plaintxt);
+                Console.WriteLine();
+                Console.WriteLine("Hasil Enkripsi : " + chipertxt);
+                Console.WriteLine("\n\nHasil telah tersalin di Clipboard!");
+                Console.ReadKey();
+                Console.Clear();
+        }
+
+        private static string Enkripsi(string kata)
+        {
+            char katapecah;
+            string hasil = null;
+            for (int i = 0; i < kata.Length; i++)
+            {
+                katapecah = kata[i];
+
+                switch (katapecah)
+                {
+                    case 'a':
+                        katapecah = 'F';
+                        break;
+                    case 'b':
+                        katapecah = 'G';
+                        break;
+                    case 'c':
+                        katapecah = 'H';
+                        break;
+                    case 'd':
+                        katapecah = 'I';
+                        break;
+                    case 'e':
+                        katapecah = 'J';
+                        break;
+                    case 'f':
+                        katapecah = 'K';
+                        break;
+                    case 'g':
+                        katapecah = 'L';
+                        break;
+                    case 'h':
+                        katapecah = 'M';
+                        break;
+                    case 'i':
+                        katapecah = 'N';
+                        break;
+                    case 'j':
+                        katapecah = 'O';
+                        break;
+                    case 'k':
+                        katapecah = 'P';
+                        break;
+                    case 'l':
+                        katapecah = 'Q';
+                        break;
+                    case 'm':
+                        katapecah = 'R';
+                        break;
+                    case 'n':
+                        katapecah = 'S';
+                        break;
+                    case 'o':
+                        katapecah = 'T';
+                        break;
+                    case 'p':
+                        katapecah = 'U';
+                        break;
+                    case 'q':
+                        katapecah = 'V';
+                        break;
+                    case 'r':
+                        katapecah = 'W';
+                        break;
+                    case 's':
+                        katapecah = 'X';
+                        break;
+                    case 't':
+                        katapecah = 'Y';
+                        break;
+                    case 'u':
+                        katapecah = 'Z';
+                        break;
+                    case 'v':
+                        katapecah = 'A';
+                        break;
+                    case 'w':
+                        katapecah = 'B';
+                        break;
+                    case 'x':
+                        katapecah = 'C';
+                        break;
+                    case 'y':
+                        katapecah = 'D';
+                        break;
+                    case 'z':
+                        katapecah = 'E';
+                        break;
+                    case 'A':
+                        katapecah = 'f';
+                        break;
+                    case 'B':
+                        katapecah = 'g';
+                        break;
+                    case 'C':
+                        katapecah = 'h';
+                        break;
+                    case 'D':
+                        katapecah = 'i';
+                        break;
+                    case 'E':
+                        katapecah = 'j';
+                        break;
+                    case 'F':
+                        katapecah = 'k';
+                        break;
+                    case 'G':
+                        katapecah = 'l';
+                        break;
+                    case 'H':
+                        katapecah = 'm';
+                        break;
+                    case 'I':
+                        katapecah = 'n';
+                        break;
+                    case 'J':
+                        katapecah = 'o';
+                        break;
+                    case 'K':
+                        katapecah = 'p';
+                        break;
+                    case 'L':
+                        katapecah = 'q';
+                        break;
+                    case 'M':
+                        katapecah = 'e';
+                        break;
+                    case 'N':
+                        katapecah = 's';
+                        break;
+                    case 'O':
+                        katapecah = 't';
+                        break;
+                    case 'P':
+                        katapecah = 'u';
+                        break;
+                    case 'Q':
+                        katapecah = 'v';
+                        break;
+                    case 'R':
+                        katapecah = 'w';
+                        break;
+                    case 'S':
+                        katapecah = 'x';
+                        break;
+                    case 'T':
+                        katapecah = 'y';
+                        break;
+                    case 'U':
+                        katapecah = 'z';
+                        break;
+                    case 'V':
+                        katapecah = 'a';
+                        break;
+                    case 'W':
+                        katapecah = 'b';
+                        break;
+                    case 'X':
+                        katapecah = 'c';
+                        break;
+                    case 'Y':
+                        katapecah = 'd';
+                        break;
+                    case 'Z':
+                        katapecah = 'e';
+                        break;
+                    case '1':
+                        katapecah = '4';
+                        break;
+                    case '2':
+                        katapecah = '5';
+                        break;
+                    case '3':
+                        katapecah = '6';
+                        break;
+                    case '4':
+                        katapecah = '7';
+                        break;
+                    case '5':
+                        katapecah = '8';
+                        break;
+                    case '6':
+                        katapecah = '9';
+                        break;
+                    case '7':
+                        katapecah = '0';
+                        break;
+                    case '8':
+                        katapecah = '1';
+                        break;
+                    case '9':
+                        katapecah = '2';
+                        break;
+                    case '0':
+                        katapecah = '3';
+                        break;
+                }
+                hasil += katapecah;
+            }
+
+            int s = hasil.Length;
+            while (s % 8 != 0)
+            {
+                hasil += ' ';
+                s = hasil.Length;
+            }
+
+            int al = 0;
+            int ah = hasil.Length - 1;
+            System.Collections.Generic.List<char> katanya = new System.Collections.Generic.List<char>();
+            for (int i = 0; i < hasil.Length; i++)
+            {
+                katanya.Add(hasil[i]);
+            }
+
+            while (al < ah)
+            {
+                char temp = katanya[al];
+                katanya[al] = katanya[al + 3];
+                katanya[al + 3] = temp;
+
+                temp = katanya[al + 1];
+                katanya[al + 1] = katanya[al + 2];
+                katanya[al + 2] = temp;
+
+                temp = katanya[al + 4];
+                katanya[al + 4] = katanya[al + 7];
+                katanya[al + 7] = temp;
+
+                temp = katanya[al + 5];
+                katanya[al + 5] = katanya[al + 6];
+                katanya[al + 6] = temp;
+                al = al + 8;
+            }
+
+            return string.Join("", katanya.ToArray()); ;
+        }
+    }
+}
