@@ -1,0 +1,26 @@
+using System;
+
+namespace NO_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double rupiah, dolarUSD;
+
+            Console.WriteLine("[===============================================]");
+            Console.WriteLine("[  SELAMAT DATANG DI PROGRAM KONVERT MATA UANG  ]");
+            Console.WriteLine("[===============================================]");
+            Console.WriteLine("");
+            Console.WriteLine("MASUKKAN JUMLAH MATA UANG RUPIAH");
+
+            rupiah = Convert.ToDouble(Console.ReadLine());
+
+            dolarUSD = rupiah/14000;
+
+            Console.WriteLine("Rupiah Ke Dolar     : " +dolarUSD);
+
+            Console.ReadKey();
+        }
+    }
+}
