@@ -1,0 +1,44 @@
+using System;
+
+namespace lat_2_14
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+  
+            string nama;
+            int nim;
+            string konsentrasi;
+            
+                
+                Console.WriteLine("");
+                Console.WriteLine("|=================================|");
+                Console.WriteLine("|PROGRAM MENAMPILKAN TAG MAHASISWA|");
+                Console.WriteLine("|=================================|");
+                Console.WriteLine("");
+                Console.WriteLine("Masukkan Data Mahasiswa");
+                Console.WriteLine("Nama  : ");
+                nama = Console.ReadLine();
+                Console.WriteLine("Nim   :");
+                nim = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Konsentrasi  :");
+                konsentrasi = Console.ReadLine();
+
+                Console.WriteLine("|=================================|");
+                Console.WriteLine("|         NAMETAG MAHASISWA       |");
+                Console.WriteLine("|=================================|");
+                Console.WriteLine("   Nama        : " + nama );
+                Console.WriteLine("   NIM         : " + nim );
+                Console.WriteLine("|---------------------------------|");
+                Console.WriteLine("   Konsentrasi : " + konsentrasi );
+                Console.WriteLine("|=================================|");
+                Console.WriteLine("");
+                Console.WriteLine("|==========================================|");
+                Console.WriteLine("|TERIMA KASIH TELAH MENGGUNAKAN PROGRAM INI|");
+                Console.WriteLine("|==========================================|");
+
+            }
+        
+    }
+}
