@@ -1,0 +1,59 @@
+using System;
+
+namespace NO_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nama;
+            int tahunLahir;
+            int umur;
+            int biaya1 = 10000;
+            int biaya2 = 25000;
+
+            Console.WriteLine("|================================================|");
+            Console.WriteLine("|SELAMAT DATAG DI PROGRAM PEMESANAN TIKET BIOSKOP|");
+            Console.WriteLine("|================================================|");
+            Console.WriteLine();
+            Console.WriteLine("Nama        : ");
+            nama = Console.ReadLine();
+            Console.WriteLine("Tahun Lahir : ");
+            tahunLahir = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+            umur = 2021 - tahunLahir;
+            if(umur < 10){
+                Console.WriteLine("|==============================|");
+                Console.WriteLine("|           ~STUDIO 1~         |");
+                Console.WriteLine("|==============================|");
+                Console.WriteLine(" Nama   : " +nama);
+                Console.WriteLine(" Harga  : " + biaya1);
+                Console.WriteLine("|==============================|");
+            }
+            else if(umur > 60) 
+            {
+                Console.WriteLine("|==============================|");
+                Console.WriteLine("|           ~STUDIO 1~         |");
+                Console.WriteLine("|==============================|");
+                Console.WriteLine(" Nama  : " +nama);
+                Console.WriteLine(" Harga : " + biaya1);
+                Console.WriteLine("|==============================|");
+            }
+            else
+            {
+                Console.WriteLine("|==============================|");
+                Console.WriteLine("|           ~STUDIO 1~         |");
+                Console.WriteLine("|==============================|");
+                Console.WriteLine(" Nama  : " +nama);
+                Console.WriteLine(" Harga : " + biaya2);
+                Console.WriteLine("|==============================|");
+            }
+
+            Console.WriteLine("Terima kasih");
+
+            Console.ReadLine();
+
+        }
+    }
+}
