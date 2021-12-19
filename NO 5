@@ -92,7 +92,8 @@ namespace HangMan
             int limbs = 0;
 
             var random = new Random();
-            var nameList = new List<string> { "mada.txt" };
+            var nameList = new List<string> { "teknik" , " informatika" , "universitas" , "riau" , "pekanbaru" , "rekayasa" , "perangkat" , 
+            "lunak" , " kecerdasan" , "visualisasi" , "komputer" , "jaringan" , "kampus" , "merdeka" };
             int randomName = random.Next(nameList.Count);
 
             //creates remain array
